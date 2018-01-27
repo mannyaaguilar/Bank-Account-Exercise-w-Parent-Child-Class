@@ -9,13 +9,23 @@ public class SavingsAccount extends BankAccount {
     @Override
     public void withdraw(int value) {
         this.balance = this.balance - value;
-        System.out.println("Amount withdrawn: $" + (this.balance - value));
-        System.out.println("Current Savings Balance: $" + this.balance);
+        if(value == 0){
+            System.out.println(" ");
+            System.out.println("Current Savings Balance: $" + this.balance);
+        }else{
+        System.out.println("Amount withdrawn from Savings: $" + value);
+            System.out.println("Savings Balance: $" + balance);
+        }
     }
 
     @Override
     public void deposit(int value) {
         this.balance = this.balance + value;
-        System.out.println("Current Savings Balance: $" + this.balance);
+        if (value == 0) {
+            System.out.println(" ");
+                    } else {
+            System.out.println("Amount deposited to Savings: $" + value);
+            System.out.println("Savings Balance: $" + this.balance);
+        }
     }
 }

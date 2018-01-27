@@ -8,16 +8,11 @@ public class Main {
         SavingsAccount savings = new SavingsAccount(500);
         CheckingsAccount checkings = new CheckingsAccount(500);
 
-        savings.withdraw(0);
-        checkings.withdraw(1000);
+        savings.withdraw(80);
+        checkings.withdraw(80);
 
-        savings.deposit(0);
-        checkings.deposit(0);
-
-//        System.out.println("Current Balance: $");
-//
-//
-//        System.out.println("Amount withdrawn: $");
+        savings.deposit(600);
+        checkings.deposit(600);
     }
 }
 
